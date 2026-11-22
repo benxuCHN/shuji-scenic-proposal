@@ -185,7 +185,7 @@ h3 { font-size: 1.18rem; font-weight: 760; line-height: 1.45; }
 .value { background: var(--pine); color: var(--white); padding: 36px 0; }
 .value-grid { display: grid; grid-template-columns: minmax(0, .65fr) minmax(0, 2fr); gap: clamp(24px, 5vw, 64px); align-items: start; }
 .value-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.value h2 { font-size: clamp(1.8rem, 2.65vw, 2.6rem); }
+.value h2 { font-size: clamp(1.8rem, 2.65vw, 2.6rem); max-width: 6em; }
 .value article { border-left: 1px solid var(--fern); padding-left: 18px; }
 .value h3 { color: var(--lime); margin-bottom: .35rem; }
 .value p { color: var(--inverse); font-size: .875rem; }
@@ -199,7 +199,16 @@ h3 { font-size: 1.18rem; font-weight: 760; line-height: 1.45; }
 }
 .value-feature .value-kicker { color: var(--lime); font-weight: 700; margin-bottom: .4rem; }
 .value-feature h3 { color: var(--white); font-size: clamp(1.3rem, 2.9vw, 2.075rem); }
-.value-feature p:last-child { font-size: .96rem; max-width: 44rem; }
+.value-feature .value-lead { font-size: .96rem; max-width: 44rem; }
+.reach-table { width: 100%; margin-top: 1rem; border-collapse: collapse; font-size: .875rem; font-variant-numeric: tabular-nums; }
+.reach-table caption { color: var(--white); text-align: left; font-weight: 700; padding-bottom: .5rem; }
+.reach-table caption span { display: block; font-size: .8125rem; font-weight: 400; color: var(--inverse); }
+.reach-table th, .reach-table td { text-align: right; padding: .35rem .25rem; border-bottom: 1px solid #517763; }
+.reach-table th:first-child { text-align: left; padding-left: 0; }
+.reach-table th { font-weight: 650; }
+.reach-table .reach-daily td { color: var(--lime); font-size: clamp(1rem, 2.5vw, 1.44rem); font-weight: 780; }
+.value .reach-note { font-size: .75rem; margin-top: .6rem; }
+.value .value-summary { grid-column: 1 / -1; color: var(--lime); padding-top: .75rem; border-top: 1px solid #517763; }
 
 .gift { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(26px, 6vw, 86px); align-items: center; padding-block: 49px; }
 .gift-figure { padding: 9px; background: var(--white); border: 1px solid var(--outline); border-radius: 5px; max-width: 450px; }
@@ -261,7 +270,7 @@ h3 { font-size: 1.18rem; font-weight: 760; line-height: 1.45; }
   .hero { gap: 26px; }
   .staff-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .value-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-  .value h2 br { display: none; }
+  .value h2 { max-width: none; }
 }
 @media (max-width: 630px) {
   .wrap { width: calc(100% - 32px); }
