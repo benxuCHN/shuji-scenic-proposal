@@ -71,17 +71,12 @@ h3 { font-size: 1.18rem; font-weight: 760; line-height: 1.45; }
   border-radius: 3px;
 }
 .button:hover { background: var(--fern); }
-.hero-figure { position: relative; }
 .hero-figure img { width: 100%; height: auto; border-radius: 6px; background: var(--pale); }
 .hero-figure figcaption {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  background: var(--scrim);
-  color: var(--white);
-  padding: .18rem .48rem;
+  margin-top: .35rem;
+  color: var(--soft-ink);
+  text-align: right;
   font-size: .75rem;
-  border-radius: 3px;
 }
 
 .staff { padding: 38px 0 48px; border-top: 1px solid var(--outline); }
